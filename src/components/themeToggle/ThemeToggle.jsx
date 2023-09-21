@@ -13,7 +13,14 @@ const ThemeToggle = () => {
   return (
     <div className={styles.container} onClick={() => toggle()}>
       <Image src='/moon.png' width={20} height={20} alt='moon' />
-      <div className={styles.switch} />
+      <div
+        className={styles.switch}
+        style={
+          theme === 'dark'
+            ? { left: 2, backgroundColor: 'white' }
+            : { right: 2, backgroundColor: 'white' }
+        }
+      />
       <Image src='/sun.png' width={20} height={20} alt='sun' />
     </div>
   )

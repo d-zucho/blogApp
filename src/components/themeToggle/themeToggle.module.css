@@ -15,9 +15,9 @@
   height: 20px;
   border-radius: 50%;
   position: absolute;
-  /* background-color: var(--color-text); */
+  background-color: var(--color-text);
   /* -webkit-transition: 0.4s;
-  transition: 0.4s; */
+  transition: 0.4s ease-in-out all; */
   background-color: #fff;
 }
 
