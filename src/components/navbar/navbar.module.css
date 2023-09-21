@@ -1,0 +1,27 @@
+.container {
+  padding: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar_socials {
+  /* display: inline-block; */
+  display: flex;
+  gap: 0.65rem;
+  flex: 1;
+}
+
+.logo {
+  flex: 1;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+}
