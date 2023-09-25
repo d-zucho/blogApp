@@ -1,5 +1,4 @@
 'use client'
-// need to use client since we are using hooks
 
 import Image from 'next/image'
 import styles from './themeToggle.module.css'
@@ -8,20 +7,27 @@ import { ThemeContext } from '@/context/ThemeContext'
 
 const ThemeToggle = () => {
   const { toggle, theme } = useContext(ThemeContext)
-  console.log(theme)
 
   return (
-    <div className={styles.container} onClick={() => toggle()}>
-      <Image src='/moon.png' width={20} height={20} alt='moon' />
+    <div
+      className={styles.container}
+      onClick={toggle}
+      style={
+        theme === 'dark'
+          ? { backgroundColor: 'grey' }
+          : { backgroundColor: 'grey' }
+      }
+    >
+      <Image src='/moon.png' alt='' width={20} height={20} />
       <div
         className={styles.switch}
         style={
           theme === 'dark'
-            ? { left: 2, backgroundColor: 'white' }
-            : { right: 2, backgroundColor: 'white' }
+            ? { right: 1, background: 'white' }
+            : { left: 1, background: 'white' }
         }
-      />
-      <Image src='/sun.png' width={20} height={20} alt='sun' />
+      ></div>
+      <Image src='/sun.png' alt='' width={22} height={22} />
     </div>
   )
 }
