@@ -31,11 +31,19 @@ const Navbar = () => {
       {/** Theme toggle && Nav Links */}
       <div className={styles.links}>
         <ThemeToggle />
-        <Link href='/'>Homepage</Link>
-        <Link href='/about'>About</Link>
-        <Link href='/contact'>Contact</Link>
-
+        <Link className={styles.link} href='/'>
+          Homepage
+        </Link>
+        <Link className={styles.link} href='/about'>
+          About
+        </Link>
+        <Link className={styles.link} href='/contact'>
+          Contact
+        </Link>
         <AuthLinks />
+      </div>
+      <div className={styles.hamburger_container}>
+        <img src='/hamburger.svg' alt='' />
       </div>
     </div>
   )

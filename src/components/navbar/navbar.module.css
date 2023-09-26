@@ -22,6 +22,58 @@
 .links {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1.25rem;
   flex: 1;
+  font-size: 20px;
+}
+
+.hamburger_container {
+  display: none;
+}
+
+/* * Media Querries * */
+
+@media screen and (max-width: 1200px) {
+  .logo {
+    font-size: 32px;
+  }
+
+  .links {
+    gap: 1rem;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar_socials {
+    display: none;
+  }
+
+  .logo {
+    text-align-last: left;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    font-size: 24px;
+  }
+
+  .link {
+    display: none;
+  }
+
+  .hamburger_container {
+    display: block;
+  }
+
+  .hamburger_container img {
+    /* display: block; */
+    width: 32px;
+    object-fit: cover;
+  }
+
+  .hamburger_container:hover {
+    cursor: pointer;
+  }
 }

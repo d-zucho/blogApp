@@ -15,15 +15,17 @@
 }
 
 .switch {
-  width: 20px;
+  width: 22px;
   height: 20px;
   border-radius: 50%;
   position: absolute;
   /* left: 2px; */
   background-color: var(--color-text);
-  /* -webkit-transition: 0.4s;
-  transition: 0.4s ease-in-out all; */
+  -webkit-transition: 0.4s;
+  transition: 0.4s ease-in-out all;
   background-color: grey;
+  align-self: center;
+  transition: 150ms ease-in-out all;
 }
 
 .switch:hover {
