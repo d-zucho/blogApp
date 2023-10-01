@@ -1,5 +1,6 @@
 .container {
-  padding: 3rem 0;
+  /* padding: 3rem 0; */
+  height: 90px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,10 +26,6 @@
   gap: 1.25rem;
   flex: 1;
   font-size: 20px;
-}
-
-.hamburger_container {
-  display: none;
 }
 
 /* * Media Querries * */
@@ -59,21 +56,15 @@
     font-size: 24px;
   }
 
+  .toggle_switch {
+    margin-right: 2rem;
+  }
+
   .link {
     display: none;
   }
 
-  .hamburger_container {
-    display: block;
-  }
-
-  .hamburger_container img {
-    /* display: block; */
-    width: 32px;
-    object-fit: cover;
-  }
-
-  .hamburger_container:hover {
-    cursor: pointer;
+  .links {
+    justify-content: flex-end;
   }
 }

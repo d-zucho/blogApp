@@ -30,7 +30,9 @@ const Navbar = () => {
 
       {/** Theme toggle && Nav Links */}
       <div className={styles.links}>
-        <ThemeToggle />
+        <div className={styles.toggle_switch}>
+          <ThemeToggle />
+        </div>
         <Link className={styles.link} href='/'>
           Homepage
         </Link>
@@ -41,9 +43,6 @@ const Navbar = () => {
           Contact
         </Link>
         <AuthLinks />
-      </div>
-      <div className={styles.hamburger_container}>
-        <img src='/hamburger.svg' alt='' />
       </div>
     </div>
   )

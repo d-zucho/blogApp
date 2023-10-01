@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from './mobileMenu.module.css'
 
-import { useState } from 'react'
+// import { useState } from 'react'
 import Link from 'next/link'
 
 const MobileMenu = () => {
